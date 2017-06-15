@@ -1,12 +1,12 @@
 import { AppRegistry } from 'react-native'
 import { StackNavigator } from 'react-navigation'
 
-import SetupNameScreen from './screens/SetupName'
-import SetupFinishScreen from './screens/SetupFinish'
+import GenerateKeypairScreen from './screens/GenerateKeypair'
+import UserSelectScreen from './screens/UserSelect'
 
 const routes = {
-  SetupName: { screen: SetupNameScreen },
-  SetupFinish: { screen: SetupFinishScreen }
+  GenerateKeypairScreen: { screen: GenerateKeypairScreen },
+  UserSelect: { screen: UserSelectScreen }
 }
 
 const PrivChat = StackNavigator(routes)
