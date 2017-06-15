@@ -1,5 +1,6 @@
 import React from 'react'
 import { Text, View, AsyncStorage, StyleSheet } from 'react-native'
+import FabButton from 'react-native-action-button'
 
 class GenerateKeypairScreen extends React.Component {
   constructor (props) {
@@ -16,6 +17,9 @@ class GenerateKeypairScreen extends React.Component {
       <View style={styles.center}>
         <Text>You're public key is</Text>
         <Text>{this.state.publicKey}</Text>
+        <FabButton buttonColor='#ff5252'
+          offsetX={16}
+          offsetY={16} />
       </View>
     )
   }
