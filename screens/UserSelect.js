@@ -17,9 +17,11 @@ class GenerateKeypairScreen extends React.Component {
       <View style={styles.center}>
         <Text>You're public key is</Text>
         <Text>{this.state.publicKey}</Text>
-        <FabButton buttonColor='#ff5252'
+        <FabButton
+          buttonColor='#ff5252'
           offsetX={16}
-          offsetY={16} />
+          offsetY={16}
+          onPress={() => this.props.navigation.navigate('DisplayQRCode')} />
       </View>
     )
   }
