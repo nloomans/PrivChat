@@ -46,7 +46,8 @@ class GenerateKeypairScreen extends React.Component {
     if (this.state.render) {
       return (
         <View style={styles.center}>
-          <Text>Press the button below to generate a keypair for this device,
+          <Text style={styles.header}>Let's get started!</Text>
+          <Text style={styles.text}>Press the button below to generate a keypair for this device,
           this will be used to comunicate securely.</Text>
           <Button title='Generate key' onPress={this.buttonPressed} />
         </View>
@@ -69,6 +70,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: 'white'
+  },
+  header: {
+    fontSize: 24
+  },
+  text: {
+    margin: 32,
+    maxWidth: 300
   }
 })
 

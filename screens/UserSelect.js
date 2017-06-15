@@ -21,6 +21,10 @@ class GenerateKeypairScreen extends React.Component {
   }
 }
 
+GenerateKeypairScreen.navigationOptions = {
+  title: 'PrivChat'
+}
+
 const styles = StyleSheet.create({
   center: {
     flex: 1,
